@@ -27,5 +27,9 @@ var_dump("{$first}");
 
 preg_match('/\d{3}-\d{3}-(\d{4})/', '555-555-5555', $matches);
 var_dump($matches);
+
 [, $lastFour] = $matches;
 var_dump($lastFour);
+
+[$full, $lastFour] = $matches;
+var_dump();
