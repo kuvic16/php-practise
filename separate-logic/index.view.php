@@ -34,7 +34,12 @@
                 <strong>Personal Responsible: </strong> <?= $task['assigned_to']; ?>
             </li>
             <li>
-                <strong>Status: </strong> <?= $task['commpleted'] ? 'Complete' : 'Incomplete'; ?>
+                <strong>Status: </strong> 
+                <?php if( $task['completed'] ) : ?>
+                    <span class="icon">&#9989;</span>
+                <?php else : ?>
+                    <span class="icon">Incomplete</span>
+                <?php endif; ?>
             </li>
         </ul>
     </body>
