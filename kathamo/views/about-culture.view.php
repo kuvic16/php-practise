@@ -1,13 +1,3 @@
-<!DOCTYPE html>
-<html langs="en">
-
-<head>
-    <meta charset="UTF-8">
-    <title>Kathamo</title>
-</head>
-
-<body>
-    <h1>About Culture</h1>
-</body>
-
-</html>
+<?php require('partials/header.php'); ?>
+<h1>About culture</h1>
+<?php require('partials/footer.php'); ?>
