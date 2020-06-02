@@ -20,6 +20,13 @@ class QueryBuilder
         $this->pdo = $pdo;
     }
 
+    /**
+     * select rows from a table
+     * 
+     * @param $table | string
+     * 
+     * @return array
+     */
     function selectAll($table)
     {
         $statement = $this->pdo->prepare("select * from {$table}");

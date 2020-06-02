@@ -1,5 +1,5 @@
 <?php require('partials/header.php'); ?>
-<h1>Submit Your Name</h1>
+<h1>Submit Task</h1>
 <form method='POST' action="/name">
     <input type="text" name="name" />
     <button type="submit">Save</button>
