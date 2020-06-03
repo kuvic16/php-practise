@@ -17,7 +17,7 @@ class Router
     /**
      * load router file
      * 
-     * @param $file | string
+     * @param string $file
      * 
      * @return Router
      */
@@ -30,6 +30,12 @@ class Router
 
     /**
      * Define routes
+     * 
+     * @deprecated
+     * 
+     * @param array $routes
+     * 
+     * @return void
      */
     public function define($routes)
     {
@@ -67,9 +73,28 @@ class Router
     public function direct($uri, $requestType)
     {
         if (array_key_exists($uri, $this->routes[$requestType])) {
-            return $this->routes[$requestType][$uri];
+            return $this->callAction(...explode('@', $this->routes[$requestType][$uri]));
         }
 
         throw new Exception('No route defined for this URI.');
+    }
+
+    /**
+     * Call action method
+     * 
+     * @param string $controller
+     * @param string $action
+     * 
+     * @return method
+     */
+    protected function callAction($controller, $action)
+    {
+        $controller = new $controller;
+        if (!method_exists($controller, $action)) {
+            throw new Exception(
+                "{$controller} does not responde to the {$action} action."
+            );
+        }
+        return $controller->$action();
     }
 }
