@@ -8,6 +8,8 @@ class Connection
     /**
      * Make database connection
      * 
+     * @param $config | array
+     * 
      * @return PDO
      */
     public static function make($config)
