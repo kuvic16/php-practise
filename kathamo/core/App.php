@@ -1,5 +1,7 @@
 <?php
 
+namespace Kathamo\Core;
+
 /**
  * App class to initialize config, database
  */

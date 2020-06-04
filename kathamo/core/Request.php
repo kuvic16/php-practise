@@ -1,5 +1,7 @@
 <?php
 
+namespace Kathamo\Core;
+
 /**
  * Request class
  */

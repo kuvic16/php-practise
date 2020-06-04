@@ -1,5 +1,9 @@
 <?php
 
+namespace Kathamo\Core;
+
+use Exception;
+
 /**
  * Router class
  */
@@ -89,6 +93,7 @@ class Router
      */
     protected function callAction($controller, $action)
     {
+        $controller = "Kathamo\\Controllers\\{$controller}";
         $controller = new $controller;
         if (!method_exists($controller, $action)) {
             throw new Exception(

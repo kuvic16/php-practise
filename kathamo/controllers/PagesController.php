@@ -1,5 +1,10 @@
 <?php
 
+namespace Kathamo\Controllers;
+
+use Kathamo\Core\App;
+use function Kathamo\Core\view;
+
 class PagesController
 {
 

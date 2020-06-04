@@ -1,5 +1,11 @@
 <?php
 
+namespace Kathamo\Core;
+
+use Kathamo\Core\App;
+use Kathamo\Core\Database\QueryBuilder;
+use Kathamo\Core\Database\Connection;
+
 App::bind('config', require 'config.php');
 
 App::bind('database', new QueryBuilder(

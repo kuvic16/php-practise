@@ -1,5 +1,10 @@
 <?php
 
+namespace Kathamo\Core\Database;
+
+use PDO;
+use Exception;
+
 /**
  * Query builder class
  */

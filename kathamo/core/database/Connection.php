@@ -1,5 +1,10 @@
 <?php
 
+namespace Kathamo\Core\Database;
+
+use PDO;
+use PDOException;
+
 /**
  * Database connection class
  */
