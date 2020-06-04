@@ -19,3 +19,15 @@ function view($name, $data = [])
     extract($data);
     return require "views/{$name}.view.php";
 }
+
+/**
+ * Redirect to specific page
+ * 
+ * @param string $path
+ * 
+ * @return void
+ */
+function redirect($path)
+{
+    header("Location: /{$path}");
+}
