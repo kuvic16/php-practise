@@ -2,6 +2,8 @@
 
 namespace Kathamo\Core;
 
+use Exception;
+
 /**
  * App class to initialize config, database
  */
