@@ -49,6 +49,9 @@ class Router
     /**
      * Set get request uri
      * 
+     * @param string $uri
+     * @param string $controller
+     * 
      * @return void
      */
     public function get($uri, $controller)
@@ -58,6 +61,9 @@ class Router
 
     /**
      * Set post request uri
+     * 
+     * @param string $uri
+     * @param string $controller
      * 
      * @return void
      */
@@ -69,8 +75,8 @@ class Router
     /**
      * Get associative controller based on uri
      * 
-     * @param $uri | string
-     * @param $requestType | string
+     * @param string $uri
+     * @param string $requestType
      * 
      * @return string | Exception
      */
