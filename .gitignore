@@ -1,1 +1,2 @@
-kathamo/vendor/
+**/kathamo/vendor/*
+**/mew-7.4/vendor/*

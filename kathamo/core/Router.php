@@ -29,7 +29,9 @@ class Router
     {
         $router = new static;
         require $file;
-        return $router;
+        //return $router;
+        var_dump("test");
+        die;
     }
 
     /**
