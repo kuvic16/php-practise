@@ -17,3 +17,6 @@ class User
 
 $age = (new User(123))->age();
 var_dump($age);
+
+
+$age = (new User(""));
