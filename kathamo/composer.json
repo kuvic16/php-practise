@@ -3,5 +3,8 @@
     "classmap": [
       "./"
     ]
+  },
+  "require": {
+    "php-di/php-di": "^6.2"
   }
 }

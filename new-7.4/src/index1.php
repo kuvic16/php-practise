@@ -30,3 +30,6 @@ $series = new SeriesCollection([
 ]);
 
 var_dump($series->firstByTitle('php series'));
+
+
+$container = new DI\Container();

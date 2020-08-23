@@ -3,6 +3,8 @@
 namespace Kathamo\Controllers;
 
 use Kathamo\Core\App;
+use Kathamo\Services\TaskService;
+
 use function Kathamo\Core\redirect;
 use function Kathamo\Core\view;
 
@@ -11,6 +13,10 @@ use function Kathamo\Core\view;
  */
 class TaskController
 {
+
+    public function __construct(TaskService $taskService)
+    {
+    }
     /**
      * task index page
      * 
